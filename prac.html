@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="prac2.css">
+   <script src = "prac3.js"></script>
+ <title> practice The Real Africa </title>
+
+</head>
+
+<body>
+
+
+<button class="tablink" onclick="window.location.href = 'Home.html'" id="defaultOpen">Home</button>
+<button class="tablink" onclick="window.location.href = 'westafro.html'" >West Africa</button>
+<button class="tablink" onclick="window.location.href = 'eastafro.html'">East Africa</button>
+<button class="tablink" onclick="window.location.href = 'ea.html' ">East Africa</button>
+<button class="tablink" onclick="window.location.href = 'sa.html'">South Africa</button>
+<button class="tablink" onclick="window.location.href = 'ca'.html'">Central Africa</button>
+<button class="tablink" onclick="window.location.href = 'about.html'">About</button>
+
+
+<div class="hero-image">
+  <div class="caption">
+  <span class="border">Welcome to East Africa!!</span>
+  </div>
+</div>
+<h2>Image Modal</h2>
+<p>In this example, we use CSS to create a modal (dialog box) that is hidden by default.</p>
+<p>We use JavaScript to trigger the modal and to display the current image inside the modal when it is clicked on. Also note that we use the value from the image's "alt" attribute as an image caption text inside the modal.</p>
+
+<img id="myImg" src="https://cloudfront.safaribookings.com/operators/photos/large/tarangire_n._park_2728_5c8816037b428.jpg" alt="Snow" style="width:100%;max-width:300px">
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<img id="myImg2" src="https://voyagesafriq.com/wp-content/uploads/2019/08/Tamarina_Golf.jpg" alt="Snow" style="width:100%;max-width:300px">
+<div id="myModal2" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img02">
+  <div id="caption2"></div>
+</div>
+
+
+<img id="myImg3" src="https://iyosayi14.com/wp-content/uploads/2018/12/PSX_20181209_204133.jpg" alt="Snow" style="width:100%;max-width:300px">
+
+
+<div id="myModal3" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img03">
+  <div id="caption3"></div>
+</div>
+
+
+
+<img id="myImg4" src="https://originsafaris.com/wp-content/uploads/2017/10/21d1cd2307f357fa3b38ebd699b3401d747713.jpg" alt="Snow" style="width:100%;max-width:300px">
+
+
+<div id="myModal4" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img04">
+  <div id="caption4"></div>
+</div>
+<script> -->
+
+var modal = document.getElementById("myModal");
+
+
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+
+
+
+
+var modal2 = document.getElementById("myModal2");
+
+var img2 = document.getElementById("myImg2");
+var modalImg2 = document.getElementById("img02");
+var captionText2 = document.getElementById("caption2");
+img2.onclick = function(){
+  modal2.style.display = "block";
+  modalImg2.src = this.src;
+  captionText2.innerHTML = this.alt;
+}
+
+var span2 = document.getElementsByClassName("close")[1];
+
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+
+
+
+
+
+var modal3 = document.getElementById("myModal3");
+
+var img3 = document.getElementById("myImg3");
+var modalImg3 = document.getElementById("img03");
+var captionText3 = document.getElementById("caption3");
+img3.onclick = function(){
+  modal3.style.display = "block";
+  modalImg3.src = this.src;
+  captionText3.innerHTML = this.alt;
+}
+
+var span3 = document.getElementsByClassName("close")[2];
+
+span3.onclick = function() {
+  modal3.style.display = "none";
+}
+
+
+
+var modal4 = document.getElementById("myModal4");
+
+var img4 = document.getElementById("myImg4");
+var modalImg4 = document.getElementById("img04");
+var captionText4 = document.getElementById("caption4");
+img4.onclick = function(){
+  modal4.style.display = "block";
+  modalImg4.src = this.src;
+  captionText4.innerHTML = this.alt;
+}
+
+var span4 = document.getElementsByClassName("close")[3];
+
+span4.onclick = function() {
+  modal4.style.display = "none";
+}
+
+
+</script>
+
+
+
+
+</body>
+</head>
+</html>
